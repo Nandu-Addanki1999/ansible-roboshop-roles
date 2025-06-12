@@ -20,7 +20,7 @@
     path: /usr/share/nginx/html
     state: absent
 
-- name: create html code
+- name: create html directory
   ansible.builtin.file:
     path: /usr/share/nginx/html
     state: directory
@@ -43,7 +43,7 @@
 
 - name: copy roboshop nginx conf
   ansible.builtin.template:
-    src: nginx.conf.j2 
+    src: nginx.conf.j2
     dest: /etc/nginx/nginx.conf
   notify:
-    - Restart nginx 
+  - Restart nginx 
