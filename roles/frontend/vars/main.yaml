@@ -1,2 +1,3 @@
 CATALOGUE_HOST: catalogue.nandu.sbs 
 CART_HOST: cart.nandu.sbs
+USER_HOST: user.nandu.sbs
